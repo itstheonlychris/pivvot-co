@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  pathPrefix: "/pivvotco",
   plugins: [
     `gatsby-plugin-postcss`,
     {

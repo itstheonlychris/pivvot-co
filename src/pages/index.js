@@ -1,6 +1,5 @@
 import React, { Fragment } from "react"
 import { Helmet } from "react-helmet"
-import logo from "../assets/pivvot_logo_animation.gif"
 import logovideo from "../assets/pivvot_logo_animation.mp4"
 
 export default () => (
@@ -25,11 +24,6 @@ export default () => (
           >
             <source src={logovideo} type="video/mp4" />>
           </video>
-          {/* <img
-            src={logo}
-            alt="pivvot logo"
-            className="w-64 h-64 mt-20 mx-auto md:mx-0"
-          /> */}
           <div className="mt-10 mb-10">
             <h1 className="text-indigo-700 text-5xl font-bold">
               Pivvot.co is changing...
