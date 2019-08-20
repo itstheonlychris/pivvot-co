@@ -26,7 +26,7 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-43d84734de84fd30f837.js"
+    "url": "webpack-runtime-fac1a7fcfa1d8b666b5f.js"
   },
   {
     "url": "styles.f9f7ba7487bea0575cd0.css"
@@ -35,18 +35,14 @@ self.__precacheManifest = [
     "url": "styles-77476b3616e6302047d5.js"
   },
   {
-    "url": "app-d4c421e6a1047dd02030.js"
+    "url": "app-e318eff5d84f0591d139.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ca639f959ec3dfb7e2af.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "faf1119c9ff6b1488874cc251b2d2f6e"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "d16f8ba0b22ed398f6958c1da5aa2845"
+    "revision": "2ca0a72e994f0b9b6d3d1ac27701ad8a"
   },
   {
     "url": "manifest.webmanifest",
@@ -69,12 +65,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/pivvotco`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/pivvotco/app-d4c421e6a1047dd02030.js`))) {
+  if (!resources || !(await caches.match(`/app-e318eff5d84f0591d139.js`))) {
     return await fetch(event.request)
   }
 
@@ -87,7 +83,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/pivvotco/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
