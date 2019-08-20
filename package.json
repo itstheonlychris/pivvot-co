@@ -4,6 +4,7 @@
   "description": "Landing page for Pivvot.co generated with Gatsby",
   "version": "0.1.0",
   "license": "MIT",
+  "homepage": "https://itstheonlychris.github.io/pivvot-co",
   "scripts": {
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",

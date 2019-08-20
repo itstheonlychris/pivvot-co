@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  pathPrefix: "/pivvotco",
   plugins: [
     `gatsby-plugin-postcss`,
     {
