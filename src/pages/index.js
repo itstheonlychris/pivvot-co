@@ -41,7 +41,7 @@ export default () => (
         <ul className="list-disc ml-10 py-5">
           <li className="py-2">
             <a
-              href="itstheonlychris.com"
+              href="https://itstheonlychris.com"
               className="underline text-indigo-700 hover:text-indigo-500 "
             >
               itstheonlyChris.com
@@ -49,7 +49,7 @@ export default () => (
           </li>
           <li className="py-2">
             <a
-              href="twitter.com/itstheonlychris"
+              href="https://twitter.com/itstheonlychris"
               className="underline text-indigo-700 hover:text-indigo-500 "
             >
               @itstheonlychris
@@ -57,7 +57,7 @@ export default () => (
           </li>
           <li className="py-2">
             <a
-              href="authorsprojects.com"
+              href="https://authorsprojects.com"
               className="underline text-indigo-700 hover:text-indigo-500 "
             >
               Authors
